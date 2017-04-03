@@ -15,7 +15,7 @@
       restart: yes
       restart_policy: "unless-stopped"
       env:
-        CATALOGUES_URL: http://{{ public_ip }}:4002/catalogues
+        CATALOGUES_URL: http://{{ public_ip }}:4002/catalogues/api/v2
         RACK_ENV: integration
         #SECRET_KEY: son-install
       ports: "5500:5500"

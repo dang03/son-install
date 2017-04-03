@@ -6,7 +6,7 @@
     name: son-gtkfnct
     image: sonatanfv/son-gtkfnct
     env:
-      CATALOGUES_URL: http://{{ public_ip }}:4002/catalogues
+      CATALOGUES_URL: http://{{ public_ip }}:4002/catalogues/api/v2
       RACK_ENV: integration
     state: started
     ports: "5500:5500"
